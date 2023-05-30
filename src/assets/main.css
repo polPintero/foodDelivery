@@ -1,0 +1,11 @@
+@import './font.css';
+
+html {
+    font-size: 18px;
+    font-family: 'TTTravels-Regular';
+    color: #404040;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
