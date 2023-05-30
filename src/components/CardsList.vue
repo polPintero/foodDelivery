@@ -45,9 +45,9 @@ export default {
 
 <style lang="scss">
 .card-list {
-    margin: 0 60px;
+    margin: 0 60px 70px 60px;
     display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(20%, 1fr));
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
 }
 </style>

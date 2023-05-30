@@ -1,5 +1,7 @@
 @import './font.css';
-
+*{
+        box-sizing: border-box;
+}
 html {
     font-size: 18px;
     font-family: 'TTTravels-Regular';

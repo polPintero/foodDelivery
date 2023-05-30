@@ -44,6 +44,10 @@
                 font-size: 4.22rem;
                 font-weight: 400;
                 line-height: 110%;
+                
+                @media (max-width: 1021px){
+                    font-size: 3.22rem;
+                }
             }
         }
 
