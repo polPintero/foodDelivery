@@ -1,6 +1,7 @@
 <template>
     <header class="header">
         <span class="header__title">FoodDeliver</span>
+        <DeliveryChoice></DeliveryChoice>
         <NavComp></NavComp>
         <span class="header__phone">+380 67 451 99 57 | 24/7</span>
     </header>
@@ -8,10 +9,11 @@
 
 <script>
 import NavComp from './NavComp.vue';
+import DeliveryChoice from './DeliveryChoice.vue';
 
 export default {
     name: 'HeaderComp',
-    components: { NavComp }
+    components: { NavComp, DeliveryChoice }
 
 }
 </script>
@@ -21,14 +23,17 @@ export default {
     position: fixed;
     left: 0;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 22px 30px;
     background: transparent;
-    display: flex;
-    justify-content: space-between;
+    z-index: 1;
 
     &__title {
         font-family: 'TTTravels-Bold';
+        margin-right: 28px;
     }
 
     &__phone {
@@ -44,6 +49,7 @@ export default {
 .scrolling {
     .header {
         background: white;
+        box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.07);
     }
 }
 </style>
