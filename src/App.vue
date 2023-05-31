@@ -1,7 +1,15 @@
+<template>
+  <HeaderComp></HeaderComp>
+  <MainComp></MainComp>
+  <CardsList></CardsList>
+  <DeliveryBtn></DeliveryBtn>
+</template>
+
 <script setup>
 import MainComp from "./components/MainComp.vue";
 import CardsList from "./components/CardsList.vue";
 import DeliveryBtn from "./components/DeliveryBtn.vue";
+import HeaderComp from './components/HeaderComp.vue';
 </script>
 
 <script>
@@ -34,11 +42,3 @@ export default {
   }
 }
 </script>
-
-<template>
-  <MainComp></MainComp>
-  <CardsList></CardsList>
-  <DeliveryBtn></DeliveryBtn>
-</template>
-
-<style ></style>
