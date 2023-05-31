@@ -7,35 +7,6 @@
 <script>
 export default {
     name: 'DeliveryBtn',
-    data () {
-        return {
-            timeout: null,
-            btnStyles: null,
-        }
-    },
-    methods: {
-        behaviorBtnSet () {
-            if (this.timeout) clearTimeout(this.timeout)
-            setTimeout(() => {
-                if (window.scrollY > 0) {
-                    this.$refs.btn.style.setProperty('--btnTransform', 'translate(-50%, 25%)');
-                    this.$refs.btn.style.setProperty('--widthBtn', '150px');
-                } else if (window.scrollY <= 0) {
-                    this.$refs.btn.style.setProperty('--btnTransform', 'translate(-50%, -25%)');
-                    this.$refs.btn.style.setProperty('--widthBtn', '198px');
-
-                }
-            }, 200)
-
-        }
-    },
-    mounted () {
-        this.btnStyles = this.$refs.btn.computedStyleMap();
-        window.addEventListener('scroll', this.behaviorBtnSet)
-    },
-    beforeUnmount () {
-        window.removeEventListener('scroll', this.behaviorBtnSet)
-    }
 }
 </script>
 
@@ -65,7 +36,20 @@ export default {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    transition-duration: 0.8s;
     cursor: pointer;
+}
+
+.scrolling {
+    .delivery-btn {
+        bottom: -100px;
+        --widthBtn: 158px;
+        // --btnTransform: translate(-50%, 25%);
+
+        &:hover {
+            --btnTransform: translate(-50%, -65%);
+        }
+    }
 }
 
 @keyframes rotateBtn {
@@ -80,4 +64,5 @@ export default {
     100% {
         transform: var(--btnTransform) rotate(calc(var(--degRotate) - calc(var(--degRotate) * 2)));
     }
-}</style>
+}
+</style>
