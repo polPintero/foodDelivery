@@ -92,6 +92,6 @@ export default {
 
 
 @for $i from 1 through 4 {
-    @include animation-func(60px)
+    @include animation-func(80px)
 }
 </style>

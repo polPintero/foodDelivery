@@ -1,12 +1,18 @@
 @import './font.css';
-*{
-        box-sizing: border-box;
+
+* {
+    box-sizing: border-box;
 }
+
 html {
+    --color-main: #404040;
+    --bg-main: #5A30F0;
+
     font-size: 18px;
     font-family: 'TTTravels-Regular';
-    color: #404040;
+    color: var(--color-main);
 }
+
 body {
     margin: 0;
     padding: 0;

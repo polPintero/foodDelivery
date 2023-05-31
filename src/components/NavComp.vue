@@ -62,11 +62,11 @@ export default {
         margin-left: 12px;
         aspect-ratio: 1;
         border-radius: 8px;
-        border: 1px solid #404040;
+        border: 1px solid var(--color-main);
         cursor: pointer;
 
         &__line {
-            border: 1px solid #404040;
+            border: 1px solid var(--color-main);
         }
     }
 

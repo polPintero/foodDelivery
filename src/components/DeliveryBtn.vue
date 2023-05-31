@@ -25,7 +25,7 @@ export default {
     font-family: 'TTTravels-DemiBold';
     line-height: 130%;
     letter-spacing: 0.03rem;
-    background: #5A30F0;
+    background: var(--bg-main);
     color: white;
     text-transform: uppercase;
     padding: 50px 25px;

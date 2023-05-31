@@ -31,7 +31,7 @@ export default {
             opacity: 0;
 
             &:checked+span {
-                background: #5A30F0;
+                background: var(--bg-main);
                 color: white;
             }
         }

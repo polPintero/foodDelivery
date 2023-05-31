@@ -47,6 +47,7 @@ export default {
 
     @media (max-width: 1060px) {
         justify-content: flex-start;
+
         &__phone {
             display: none;
         }
@@ -54,7 +55,8 @@ export default {
 
     @media (max-width: 450px) {
         padding-top: 50px;
-        &__title{
+
+        &__title {
             position: absolute;
             left: 50%;
             top: 16px;
