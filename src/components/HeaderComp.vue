@@ -52,6 +52,16 @@ export default {
         }
     }
 
+    @media (max-width: 450px) {
+        padding-top: 50px;
+        &__title{
+            position: absolute;
+            left: 50%;
+            top: 16px;
+            transform: translateX(-50%);
+        }
+    }
+
 }
 
 .scrolling {

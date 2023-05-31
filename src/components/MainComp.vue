@@ -1,8 +1,6 @@
 <template>
-    <div class="main-comp">
-        <main>
-            <img class="main-comp__img" src="../assets/images/main.png" alt="main" />
-        </main>
+    <main class="main-comp">
+        <img class="main-comp__img" src="../assets/images/main.png" alt="main" />
         <div class="main-comp__descr">
             <div class="main-comp__descr--wrap">
                 <h1>Доставка
@@ -12,7 +10,7 @@
                     самостійно.</span>
             </div>
         </div>
-    </div>
+    </main>
 </template>
 
 <script></script>
@@ -25,7 +23,6 @@
     &__img {
         display: block;
         max-width: 50vw;
-        // max-height: 100vh;
     }
 
     &__descr {
@@ -44,13 +41,26 @@
                 font-size: 4.22rem;
                 font-weight: 400;
                 line-height: 110%;
-                
-                @media (max-width: 1021px){
+
+                @media (max-width: 1021px) {
                     font-size: 3.22rem;
+                }
+
+                @media (max-width: 921px) {
+                    font-size: 2.2rem;
                 }
             }
         }
 
+    }
+
+    @media (max-width: 721px) {
+        flex-direction: column;
+
+        &__img {
+            max-width: 100vw;
+            margin-bottom: 40px;
+        }
     }
 }
 </style>

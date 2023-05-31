@@ -57,14 +57,15 @@ export default {
         display: none;
         flex-direction: column;
         justify-content: space-around;
-        padding: 5px;
         width: 30px;
+        padding: 5px;
+        margin-left: 12px;
         aspect-ratio: 1;
         border-radius: 8px;
         border: 1px solid #404040;
         cursor: pointer;
 
-        &__line{
+        &__line {
             border: 1px solid #404040;
         }
     }
@@ -79,17 +80,19 @@ export default {
 
     @media (max-width: 860px) {
         margin-left: auto;
-            &__content {
-                display: none;
-            }
 
-            &__gamburger {
-                display: flex;
-            }
+        &__content {
+            display: none;
+        }
+
+        &__gamburger {
+            display: flex;
+        }
 
 
     }
 
 
 
-}</style>
+}
+</style>
