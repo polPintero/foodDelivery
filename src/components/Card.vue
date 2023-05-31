@@ -28,6 +28,9 @@ export default {
     border-radius: 8px;
     background: #F3F6FB;
     height: 328px;
+    width: max(20%, 300px);
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
     cursor: pointer;
 
