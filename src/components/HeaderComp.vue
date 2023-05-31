@@ -42,6 +42,14 @@ export default {
         font-size: 16px;
         line-height: 120%;
         margin-left: auto;
+
+    }
+
+    @media (max-width: 1060px) {
+        justify-content: flex-start;
+        &__phone {
+            display: none;
+        }
     }
 
 }

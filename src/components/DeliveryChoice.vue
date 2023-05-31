@@ -14,13 +14,13 @@ export default {
 
 <style lang="scss">
 .delivery-choice {
-    border: 1px solid #e2e8f0;
+    display: flex;
     padding: 3px;
+    min-width: fit-content;
     background: white;
     border-radius: 48px;
-    display: flex;
+    border: 1px solid #e2e8f0;
     overflow: hidden;
-    min-width: fit-content;
 
     &__item {
         background-color: inherit;

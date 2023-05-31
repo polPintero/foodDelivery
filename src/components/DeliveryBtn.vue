@@ -44,7 +44,6 @@ export default {
     .delivery-btn {
         bottom: -100px;
         --widthBtn: 158px;
-        // --btnTransform: translate(-50%, 25%);
 
         &:hover {
             --btnTransform: translate(-50%, -65%);
