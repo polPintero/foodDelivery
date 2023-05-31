@@ -2,7 +2,7 @@
     <section class="card">
         <div v-show="card" class="card__item">
             <div class="card__title">{{ card.title }}</div>
-            <img :src="'src/assets/images/' + card.img" alt="">
+            <img :src="'/assets/images/' + card.img" alt="">
         </div>
         <div class="card__descr">{{ card.descr }}</div>
     </section>
