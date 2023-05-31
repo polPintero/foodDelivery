@@ -1,13 +1,21 @@
 # food_delivery
 
 #Task description
+
 [Макети](https://www.figma.com/file/B6Yc5byh0JHFBwOzP3ZIro/Test-task-with-animation-%7C-redlab-2023?type=design&node-id=2887%3A43018&t=phAeINnAAJyR07Rm-1)
+
 [Шрифти](https://drive.google.com/drive/folders/1xtd0enYLgn3qrIK7Cx2V6NTruRI8awDZ?usp=sharing)
+
 Реалізувати анімації згідно [прикладу](https://drive.google.com/file/d/1nuC1QY8bfcyD3gxjbLUkhAO-_KW-UYua/view?usp=sharing)
+
 Не використовувати готові CSS-фреймворки (Bootstrap и тд)
+
 Сторінка має адаптуватися для планшетів та телефонів.
+
 Розмістити проект Git
+
 Розмістити проект на хостинг
+
 
 This template should help get you started developing with Vue 3 in Vite.
 
